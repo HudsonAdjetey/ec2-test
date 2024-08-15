@@ -10,7 +10,7 @@ const connDB = async () => {
       // useNewUrlParser: true,
     });
     // if (process.env.NODE_ENV == "development") {
-    //   console.log(`MongoDB connected: ${conn.connection.host}`);
+    console.log(`MongoDB connected: ${conn.connection.host}`);
     // }
   } catch (error) {
     console.log(`Error: ${error.message}`);
