@@ -49,7 +49,7 @@ if (process.env.NODE_ENV == "development") {
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   if (process.env.NODE_ENV == "development") {
     console.log(`Server running on Port ${PORT}`);
   } else if (process.env.NODE_ENV == "production") {
