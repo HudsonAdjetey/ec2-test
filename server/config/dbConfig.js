@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const connDB = async () => {
-  const URL = process.env.CONN_STR;
+  const URL =
+    "mongodb+srv://ikobDev:edVUZLNyGQn7dz5H@atlascluster.5ilbo3m.mongodb.net/learniverse?retryWrites=true&w=majority";
   try {
     const conn = await mongoose.connect(URL, {
       // useNewUrlParser: true,
