@@ -1,4 +1,3 @@
-client
 client/dist
 server/dist
 server/.env
