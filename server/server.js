@@ -30,9 +30,6 @@ app.use(express.json());
 app.use("/api/auth", AuthRouter);
 app.use("/api/course", CourseRouter);
 
-app.use(express.static(path.join(__dirname, "./public")));
-console.log(path.join(__dirname, "./public"));
-
 if (process.env.NODE_ENV == "development") {
   app.all("*", (req, res) => {
     res.status(404);
